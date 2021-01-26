@@ -1,0 +1,24 @@
+[08-1 Conv2D]
+
+# 합성곱 신경망의 구성 요소
+
+## 합성곱
+
+## 케라스 합성곱 층
+
+from tensorflow import keras
+keras.layers.Conv2D(10, kernel_size=(3, 3), activation='relu')
+
+### 패딩과 스트라이드
+
+keras.layers.Conv2D(10, kernel_size=(3, 3), activation='relu', padding='same')
+
+keras.layers.Conv2D(10, kernel_size=(3, 3), activation='relu', padding='same', strides=1)
+
+keras.layers.MaxPooling2D(2)
+
+keras.layers.MaxPooling2D(2, strides=2, padding='valid')
+
+## 합성곱 신경망의 전체 구조
+
+### 컬러 이미지를 사용한 합성곱
